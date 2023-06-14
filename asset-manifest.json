@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/this-is-nicole-kwon/static/css/main.073c9b0a.css",
-    "main.js": "/this-is-nicole-kwon/static/js/main.66d0a87b.js",
+    "main.css": "/this-is-nicole-kwon/static/css/main.4d06e140.css",
+    "main.js": "/this-is-nicole-kwon/static/js/main.c4a52fd7.js",
     "static/js/787.ca5bef45.chunk.js": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js",
-    "static/media/logo.svg": "/this-is-nicole-kwon/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Winkle-Regular.ttf": "/this-is-nicole-kwon/static/media/Winkle-Regular.e956a60e8f74e48a7bbe.ttf",
     "index.html": "/this-is-nicole-kwon/index.html",
-    "main.073c9b0a.css.map": "/this-is-nicole-kwon/static/css/main.073c9b0a.css.map",
-    "main.66d0a87b.js.map": "/this-is-nicole-kwon/static/js/main.66d0a87b.js.map",
+    "main.4d06e140.css.map": "/this-is-nicole-kwon/static/css/main.4d06e140.css.map",
+    "main.c4a52fd7.js.map": "/this-is-nicole-kwon/static/js/main.c4a52fd7.js.map",
     "787.ca5bef45.chunk.js.map": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.66d0a87b.js"
+    "static/css/main.4d06e140.css",
+    "static/js/main.c4a52fd7.js"
   ]
 }
