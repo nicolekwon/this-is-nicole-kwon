@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+ font-family: "WinkleRegular";
+ src: local("WinkleRegular"), url("./fonts/Winkle-Regular.ttf") format("truetype");
+ font-weight: normal;
+}
