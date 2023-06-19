@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/this-is-nicole-kwon/static/css/main.104554bf.css",
-    "main.js": "/this-is-nicole-kwon/static/js/main.c6441e53.js",
+    "main.css": "/this-is-nicole-kwon/static/css/main.3f55607e.css",
+    "main.js": "/this-is-nicole-kwon/static/js/main.c2919180.js",
     "static/js/787.ca5bef45.chunk.js": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js",
     "static/media/software_engineer.JPEG": "/this-is-nicole-kwon/static/media/software_engineer.9a61669f8d0c808af452.JPEG",
     "static/media/photo.jpg": "/this-is-nicole-kwon/static/media/photo.de07d8fa4418fbda2476.jpg",
@@ -9,12 +9,12 @@
     "static/media/Inter-Regular.ttf": "/this-is-nicole-kwon/static/media/Inter-Regular.aadb65ac45347ff46699.ttf",
     "static/media/Roboto-Regular.ttf": "/this-is-nicole-kwon/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "index.html": "/this-is-nicole-kwon/index.html",
-    "main.104554bf.css.map": "/this-is-nicole-kwon/static/css/main.104554bf.css.map",
-    "main.c6441e53.js.map": "/this-is-nicole-kwon/static/js/main.c6441e53.js.map",
+    "main.3f55607e.css.map": "/this-is-nicole-kwon/static/css/main.3f55607e.css.map",
+    "main.c2919180.js.map": "/this-is-nicole-kwon/static/js/main.c2919180.js.map",
     "787.ca5bef45.chunk.js.map": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.104554bf.css",
-    "static/js/main.c6441e53.js"
+    "static/css/main.3f55607e.css",
+    "static/js/main.c2919180.js"
   ]
 }
