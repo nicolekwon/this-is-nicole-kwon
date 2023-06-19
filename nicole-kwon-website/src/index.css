@@ -12,8 +12,20 @@ code {
     monospace;
 }
 
-@font-face {
- font-family: "WinkleRegular";
- src: local("WinkleRegular"), url("./fonts/Winkle-Regular.ttf") format("truetype");
- font-weight: normal;
-}
+ @font-face {
+  font-family: "Roboto-Regular";
+  src: local("RobotoRegular"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+ }
+
+ @font-face {
+  font-family: "Inter-Regular";
+  src: local("InterRegular"), url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+ }
+
+ @font-face {
+  font-family: "EBGaramond-Regular";
+  src: local("InterRegular"), url("./fonts/EBGaramond-Regular.ttf") format("truetype");
+  font-weight: normal;
+ }
