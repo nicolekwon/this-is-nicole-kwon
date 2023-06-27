@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.workbody {
+    background-color: #EAF8FF;
+    height: 93vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+.worktitle {
+    color: #6E95B8;
+    font-family: "EBGaramond-Regular";
+    font-size: 40px;
+    padding-top: 5vh;
+    padding-left: 10vh;
+}
+
+.workdescription1 {
+    position: relative; 
+    bottom: 1vh; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    width: 100%; 
+    height: 22%;
+  }
+
+  .workdescription2 {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    width: 100%; 
+    height: 22%; 
+    padding-bottom: 12vh;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column; 
+    width: 23%;
+    height: 23%;
+  }
+
+  .projectheading {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
+
+  .projectname {
+    padding-left: 2vh;
+    font-family: "Roboto-Regular";
+    font-weight: bold;
+    font-size: 20px;
+    color: #666666;
+  }
+
+  .projecticon {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .projectbody {
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    color: #666666;
+  }
+
+  .learnmorebutton {
+    object-fit: contain;
+    object-position: left;
+    width: 60%;
+    height: 60%;
+    padding-top: 1vh;
+  }

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.projectcontainer {
+    background-color: #EDEAFE;
+    height: 93vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+.closeicon {
+    object-fit: contain;
+    object-position: left;
+    padding-left: 2vh;
+    padding-top: 2.5vh;
+    width: 6vh;
+    height: 6vh;
+  }
