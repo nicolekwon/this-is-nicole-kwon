@@ -31,13 +31,20 @@ text-decoration: none;
 .navheaders {
 display: flex;
 flex-direction: row;
-width: 15vh;
+width: 20vh;
 justify-content: space-between;
 list-style-type: none;
 padding-right: 2vh;
 }
 
-.headers {
+.projectsheader {
+font-family: "Inter-Regular";
+color: #666666;
+padding-bottom: 0.6vh;
+text-decoration: none;
+}
+
+.aboutsheader {
 font-family: "Inter-Regular";
 color: #666666;
 padding-bottom: 0.6vh;

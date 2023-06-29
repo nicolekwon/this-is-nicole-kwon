@@ -22,7 +22,6 @@
 
 .workdescription1 {
     position: relative; 
-    bottom: 1vh; 
     display: flex;
     flex-direction: row; 
     justify-content: space-around; 

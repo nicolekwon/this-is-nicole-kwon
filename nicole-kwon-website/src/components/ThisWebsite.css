@@ -20,3 +20,37 @@
     width: 6vh;
     height: 6vh;
   }
+
+.projectheader {
+    font-family: "Inter-Regular";
+    font-weight: bold;
+    font-size: 20px;
+    color: #666666;
+    padding-left: 10vh;
+}
+
+.projectdate {
+    position: relative;
+    bottom: 2vh;
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    color: #666666;
+    padding-left: 10vh;
+    padding-right: 80vh; 
+}
+
+.projectdescription {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    color: #666666;
+    padding-left: 10vh;
+    padding-right: 10vh; 
+    width: 50%; 
+}
+
+.github {
+    padding-top: 2vh;
+    padding-left: 10vh; 
+    width: 6vh;
+    height: 6vh;
+}

@@ -22,8 +22,8 @@ function NavBar() {
         <div className="navend">
           <Fade right when={change} duration={2000}>
             <ul className="navheaders">
-              <li className="headers"><Link to="/work" className="headers">work</Link></li>
-              <li className="headers"><Link to="/about" className="headers">about</Link></li>
+              <li className="projectsheaders"><Link to="/projects" className="headers">projects</Link></li>
+              <li className="aboutsheaders"><Link to="/about" className="headers">about</Link></li>
             </ul>
           </Fade>
           <button className="menu" onClick={() => setChange(!change)}> 

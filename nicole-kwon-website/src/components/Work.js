@@ -25,14 +25,14 @@ function Work() {
   <div className="container">
     <NavBar />
     <div className="workbody">
-      <p className="worktitle">work</p>
+      <p className="worktitle">projects</p>
       <div className="workdescription1">
         <div className="project">
           <div className="projectheading">
             <img src={thiswebsite} className="projecticon" alt="thiswebsite"/>
             <p className="projectname">this-is-nicole-kwon</p>
           </div>
-          <p className="projectbody">is a web application for honing react knowledge and showcasing a resume creatively.</p>
+          <p className="projectbody">is a web application &#40;what you're looking at right now!&#41; for honing react knowledge and showcasing projects creatively.</p>
           <Link to="/thiswebsite">
             <img src={learnmore} className="learnmorebutton" alt="learnmore"/>
           </Link>

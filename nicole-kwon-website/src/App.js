@@ -24,7 +24,7 @@ function App() {
       <SparklyCursor />
       <Routes>
         <Route path="/this-is-nicole-kwon" element={ <Home/> } />
-        <Route path="/work" element={ <Work/> } />
+        <Route path="/projects" element={ <Work/> } />
         <Route path="/about" element={ <About/> } />
         <Route path="/thiswebsite" element={ <ThisWebsite/> } />
         <Route path="/deeper" element={ <Deeper/> } />

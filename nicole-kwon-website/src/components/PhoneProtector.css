@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.projectdivider {
+    background-color: #EDEAFE;
+    width: 100%; 
+    height: 93vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectcontainer {
+    display: flex;
+    flex-direction: column; 
+}
+
+.closeicon {
+    object-fit: contain;
+    object-position: left;
+    padding-left: 2vh;
+    padding-top: 2.5vh;
+    width: 6vh;
+    height: 6vh;
+  }
+
+.projectheader {
+    font-family: "Inter-Regular";
+    font-weight: bold;
+    font-size: 20px;
+    color: #666666;
+    padding-left: 10vh;
+}
+
+.projectdate {
+    position: relative;
+    bottom: 2vh;
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    color: #666666;
+    padding-left: 10vh;
+    padding-right: 80vh; 
+}
+
+.projectdescription {
+    font-family: "Inter-Regular";
+    font-size: 15px;
+    color: #666666;
+    padding-left: 10vh;
+    padding-right: 10vh; 
+    width: 80%;
+}
+
+.github {
+    padding-top: 2vh;
+    padding-left: 10vh; 
+    width: 6vh;
+    height: 6vh;
+}
+
+.projectcarousel {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    padding-right: 10vh; 
+    padding-top: 20vh;
+    padding-bottom: 7vh;  
+}
