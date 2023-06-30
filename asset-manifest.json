@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/this-is-nicole-kwon/static/css/main.14bfb8c3.css",
-    "main.js": "/this-is-nicole-kwon/static/js/main.d67fecca.js",
+    "main.js": "/this-is-nicole-kwon/static/js/main.773684ed.js",
     "static/js/787.ca5bef45.chunk.js": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js",
     "static/media/snowfallvid.mp4": "/this-is-nicole-kwon/static/media/snowfallvid.fe8498d62a1c07047bc3.mp4",
     "static/media/phoneprotectorvid.mp4": "/this-is-nicole-kwon/static/media/phoneprotectorvid.f95d67ff9073a696a5d0.mp4",
@@ -44,11 +44,11 @@
     "static/media/star.png": "/this-is-nicole-kwon/static/media/star.e0d18c1e81de2a0d91d7.png",
     "index.html": "/this-is-nicole-kwon/index.html",
     "main.14bfb8c3.css.map": "/this-is-nicole-kwon/static/css/main.14bfb8c3.css.map",
-    "main.d67fecca.js.map": "/this-is-nicole-kwon/static/js/main.d67fecca.js.map",
+    "main.773684ed.js.map": "/this-is-nicole-kwon/static/js/main.773684ed.js.map",
     "787.ca5bef45.chunk.js.map": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14bfb8c3.css",
-    "static/js/main.d67fecca.js"
+    "static/js/main.773684ed.js"
   ]
 }
