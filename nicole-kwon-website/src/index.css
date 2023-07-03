@@ -29,3 +29,5 @@ code {
   src: local("InterRegular"), url("./fonts/EBGaramond-Regular.ttf") format("truetype");
   font-weight: normal;
  }
+
+ @import-normalize;

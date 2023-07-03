@@ -33,6 +33,7 @@ function App() {
         <Route path="/smartcommute" element={ <SmartCommute/> } />
         <Route path="/phoneprotector" element={ <PhoneProtector/> } />
       </Routes>
+      
     </>
   );
 }

@@ -1,64 +1,117 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    overflow: hidden;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.mobilemsg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; 
+  text-align: center; 
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-top: 10vh; 
+  flex-direction: column; 
+  font-family: "EBGaramond-Regular";
+  color: white; 
+  font-size: 20px;
+}
+
+.mobilemsgbody {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9FCBF4), to(#EAD8FC));
+  background-image: -o-linear-gradient(top, #9FCBF4, #EAD8FC);
+  background-image: linear-gradient(to bottom, #9FCBF4, #EAD8FC);
+  height: 100vh;
+}
+
+.aboutcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  overflow: hidden;
 }
 
 .aboutbody {
-    background-color: #EAF8FF;
-    height: 93vh;
-    display: flex;
-    flex-direction: row; 
+  background-color: #EAF8FF;
+  height: 93vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; 
 }
 
 .aboutheader {
-    display: flex;
-    flex-direction: column; 
-    padding-right: 19vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; 
+  padding-right: 19vh;
 }
 
 .abouttitle {
-    color: #6E95B8;
-    font-family: "EBGaramond-Regular";
-    font-size: 40px;
-    padding-top: 5vh;
-    padding-left: 10vh;
+  color: #6E95B8;
+  font-family: "EBGaramond-Regular";
+  font-size: 40px;
+  padding-top: 5vh;
+  padding-left: 10vh;
 }
 
 .aboutphoto {
-    position: relative;
-    left: 19vh;
-    bottom: 5vh;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
-  }
+  position: relative;
+  left: 19vh;
+  width: 40vh;
+  height: 60vh;
+  border-radius: 50%;
+}
 
-  .aboutheading {
-    font-family: "Roboto-Regular";
-    font-weight: bold;
-    font-size: 25px;
-    color: #666666;
-  }
+.aboutheading {
+  font-family: "Roboto-Regular";
+  font-weight: bold;
+  font-size: 25px;
+  color: #666666;
+}
 
-  .aboutparagraph {
-    font-family: "Roboto-Regular";
-    color: #666666;
-    font-size: 14px;
-    padding-left: 25vh;
-    padding-right: 25vh;
-  }
+.aboutparagraph {
+  font-family: "Roboto-Regular";
+  color: #666666;
+  font-size: 14px;
+  padding-left: 25vh;
+  padding-right: 25vh;
+}
 
-  .aboutdescription {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    text-align: center; 
-    width: 100%; 
-    height: 100%; 
-  }
+.aboutdescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center; 
+  text-align: center; 
+  width: 100%; 
+  height: 100%; 
+}
 
-  .aboutlink {
-    color: #666666;
-  }
+.aboutlink {
+  color: #666666;
+}

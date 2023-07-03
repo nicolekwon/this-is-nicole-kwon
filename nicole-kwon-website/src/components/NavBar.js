@@ -21,10 +21,16 @@ function NavBar() {
         </Link>
         <div className="navend">
           <Fade right when={change} duration={2000}>
-            <ul className="navheaders">
-              <li className="projectsheaders"><Link to="/projects" className="headers">projects</Link></li>
-              <li className="aboutsheaders"><Link to="/about" className="headers">about</Link></li>
-            </ul>
+            {
+              change ?
+              <ul className="navheaders">
+                <li className="projectsheaders"><Link to="/projects" className="headers">projects</Link></li>
+                <li className="aboutsheaders"><Link to="/about" className="headers">about</Link></li>
+              </ul>
+              :
+              <ul className="navheaders">
+              </ul>
+            }
           </Fade>
           <button className="menu" onClick={() => setChange(!change)}> 
             <img src={menu} className="menuicon" alt="menuicon"/>

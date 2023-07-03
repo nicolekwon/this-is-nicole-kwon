@@ -15,15 +15,38 @@ import terrierexchange3 from '../icons/terrierexchange3.png';
 import terrierexchange4 from '../icons/terrierexchange4.png';
 import terrierexchange5 from '../icons/terrierexchange5.png';
 
+import Warning from './Warning';
+
 function TerrierExchange() {
+
+  const [isWidth, setisWidth] = React.useState(false);
+  const [isHeight, setisHeight] = React.useState(false);
 
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
+    setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+    setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
     return () => (document.body.style.overflow = "scroll");
   });
 
-  return (
+  React.useEffect(() => {
+    function handleResize() {
+      setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+      setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  });
+
+  return(
     <>
+    { isWidth || isHeight ?
+    <Warning /> 
+    :
       <div className="tecontainer">
         <NavBar />
         <div className="teprojectdivider">
@@ -67,6 +90,7 @@ function TerrierExchange() {
           </div>
         </div>
       </div>
+    }
     </>
   );
 }

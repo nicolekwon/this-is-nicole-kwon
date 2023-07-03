@@ -1,17 +1,42 @@
 import './About.css';
+import 'normalize.css';
 import React from 'react';
 import about_photo from '../icons/about_photo.JPG';
 
 import NavBar from './NavBar';
+import Warning from './Warning';
 
 function About() {
+
+  const [isWidth, setisWidth] = React.useState(false);
+  const [isHeight, setisHeight] = React.useState(false);
+
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
+    setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+    setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
     return () => (document.body.style.overflow = "scroll");
   });
 
+  React.useEffect(() => {
+    function handleResize() {
+      setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+      setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  });
+
   return(
-  <div className="container">
+  <>
+  { isWidth || isHeight ?
+  <Warning />
+  :
+  <div className="aboutcontainer">
     <NavBar />
     <div className="aboutbody">
       <div className="aboutheader">
@@ -40,7 +65,10 @@ function About() {
         </p>
       </div>
     </div>
-  </div>);
+  </div>
+  }
+  </>
+  );
 }
 
 export default About;

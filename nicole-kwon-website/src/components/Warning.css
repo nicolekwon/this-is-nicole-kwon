@@ -1,0 +1,23 @@
+.mobilemsg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+    text-align: center; 
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 10vh; 
+    flex-direction: column; 
+    font-family: "EBGaramond-Regular";
+    color: white; 
+    font-size: 20px;
+  }
+  
+  .mobilemsgbody {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9FCBF4), to(#EAD8FC));
+    background-image: -o-linear-gradient(top, #9FCBF4, #EAD8FC);
+    background-image: linear-gradient(to bottom, #9FCBF4, #EAD8FC);
+    height: 100vh;
+  }

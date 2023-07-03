@@ -15,15 +15,38 @@ import smartcommute3 from '../icons/smartcommute3.png';
 import smartcommute4 from '../icons/smartcommute4.png';
 import smartcommute5 from '../icons/smartcommute5.png';
 
+import Warning from './Warning';
+
 function SmartCommute() {
+
+  const [isWidth, setisWidth] = React.useState(false);
+  const [isHeight, setisHeight] = React.useState(false);
 
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
+    setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+    setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
     return () => (document.body.style.overflow = "scroll");
   });
 
-  return (
+  React.useEffect(() => {
+    function handleResize() {
+      setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+      setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  });
+
+  return(
     <>
+    { isWidth || isHeight ?
+    <Warning /> 
+    :
       <div className="container">
         <NavBar />
         <div className="projectdivider">
@@ -67,6 +90,7 @@ function SmartCommute() {
           </div>
         </div>
       </div>
+    }
     </>
   );
 }

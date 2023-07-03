@@ -7,16 +7,38 @@ import Slide from 'react-reveal/Slide';
 import close from '../icons/close.png';
 import NavBar from './NavBar';
 import github from '../icons/github.png';
+import Warning from './Warning';
 
 function ThisWebsite() {
 
+  const [isWidth, setisWidth] = React.useState(false);
+  const [isHeight, setisHeight] = React.useState(false);
+
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
+    setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+    setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
     return () => (document.body.style.overflow = "scroll");
   });
 
-  return (
+  React.useEffect(() => {
+    function handleResize() {
+      setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+      setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  });
+
+  return(
     <>
+    { isWidth || isHeight ?
+    <Warning /> 
+    :
       <div className="container">
         <NavBar />
           <div className="projectcontainer">
@@ -39,6 +61,7 @@ function ThisWebsite() {
             </Slide>
           </div>
       </div>
+    }
     </>
   );
 }

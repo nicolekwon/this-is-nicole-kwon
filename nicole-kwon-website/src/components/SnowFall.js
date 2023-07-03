@@ -8,16 +8,38 @@ import close from '../icons/close.png';
 import github from '../icons/github.png';
 import snowfallvid from '../icons/snowfallvid.mp4';
 import NavBar from './NavBar';
+import Warning from './Warning';
 
 function SnowFall() {
 
+  const [isWidth, setisWidth] = React.useState(false);
+  const [isHeight, setisHeight] = React.useState(false);
+
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
+    setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+    setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
     return () => (document.body.style.overflow = "scroll");
   });
 
-  return (
+  React.useEffect(() => {
+    function handleResize() {
+      setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+      setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  });
+
+  return(
     <>
+    { isWidth || isHeight ?
+    <Warning /> 
+    :
       <div className="container">
         <NavBar />
         <div className="projectdivider">
@@ -47,6 +69,7 @@ function SnowFall() {
           </div>
         </div>
       </div>
+    }
     </>
   );
 }

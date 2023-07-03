@@ -1,4 +1,5 @@
 import './Home.css';
+import 'normalize.css';
 import React from 'react';
 import star from '../icons/star.png';
 import software_engineer from '../icons/software_engineer.JPEG';
@@ -12,6 +13,7 @@ import linkedin from '../icons/linkedin.png';
 import resume from '../icons/resume.png';
 
 import NavBar from './NavBar';
+import Warning from './Warning';
 
 function Home() {
 
@@ -20,9 +22,27 @@ function Home() {
   const titles = ["a junior swe", "an aspiring pm", "a bu alumna", "an ot brother", "a violinist & violist", "a proud cat mom"];
   const images = [software_engineer, aspiring_product_manager, bu_alum, brother, violist, animal_lover];
 
+  const [isWidth, setisWidth] = React.useState(false);
+  const [isHeight, setisHeight] = React.useState(false);
+
   React.useEffect(() => {
     document.body.style.overflow = "hidden";
+    setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+    setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
     return () => (document.body.style.overflow = "scroll");
+  });
+
+  React.useEffect(() => {
+    function handleResize() {
+      setisWidth(window.matchMedia("only screen and (max-width: 1350px)").matches);
+      setisHeight(window.matchMedia("only screen and (max-height: 627px)").matches);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return _ => {
+      window.removeEventListener('resize', handleResize);
+    }
+
   });
 
   React.useEffect(() => {
@@ -38,6 +58,9 @@ function Home() {
 
   return (
     <>
+    { isWidth || isHeight ?
+    <Warning /> 
+    :
     <div className="container">
       <NavBar />
       <div className="body">
@@ -65,6 +88,7 @@ function Home() {
         </div>
       </div>
     </div>
+    }
     </>
   );
 }
