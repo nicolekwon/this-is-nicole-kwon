@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/this-is-nicole-kwon/static/css/main.ca042f01.css",
-    "main.js": "/this-is-nicole-kwon/static/js/main.9132adbc.js",
+    "main.js": "/this-is-nicole-kwon/static/js/main.93956302.js",
     "static/js/787.ca5bef45.chunk.js": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js",
     "static/media/snowfallvid.mp4": "/this-is-nicole-kwon/static/media/snowfallvid.fe8498d62a1c07047bc3.mp4",
     "static/media/phoneprotectorvid.mp4": "/this-is-nicole-kwon/static/media/phoneprotectorvid.f95d67ff9073a696a5d0.mp4",
@@ -20,6 +20,7 @@
     "static/media/learnmore.png": "/this-is-nicole-kwon/static/media/learnmore.ae271d1cc6310e144282.png",
     "static/media/deeper4.png": "/this-is-nicole-kwon/static/media/deeper4.9596dba52edac9b1a33e.png",
     "static/media/deeper5.png": "/this-is-nicole-kwon/static/media/deeper5.09413d570ee945f85bd6.png",
+    "static/media/nicole_kwon_resume.pdf": "/this-is-nicole-kwon/static/media/nicole_kwon_resume.d23ed6050080d79236dc.pdf",
     "static/media/deeper3.png": "/this-is-nicole-kwon/static/media/deeper3.b2b4bc4f249871813afb.png",
     "static/media/deeper2.png": "/this-is-nicole-kwon/static/media/deeper2.9a4fadef83247fc89616.png",
     "static/media/smartcommute4.png": "/this-is-nicole-kwon/static/media/smartcommute4.65669a06370bbb587a8d.png",
@@ -44,11 +45,11 @@
     "static/media/star.png": "/this-is-nicole-kwon/static/media/star.e0d18c1e81de2a0d91d7.png",
     "index.html": "/this-is-nicole-kwon/index.html",
     "main.ca042f01.css.map": "/this-is-nicole-kwon/static/css/main.ca042f01.css.map",
-    "main.9132adbc.js.map": "/this-is-nicole-kwon/static/js/main.9132adbc.js.map",
+    "main.93956302.js.map": "/this-is-nicole-kwon/static/js/main.93956302.js.map",
     "787.ca5bef45.chunk.js.map": "/this-is-nicole-kwon/static/js/787.ca5bef45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca042f01.css",
-    "static/js/main.9132adbc.js"
+    "static/js/main.93956302.js"
   ]
 }
