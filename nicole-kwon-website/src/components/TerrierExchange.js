@@ -57,12 +57,12 @@ function TerrierExchange() {
               </Link>
             </Slide>
             <Slide bottom cascade>
-              <p className="teprojectheader"> terrierexchange </p>
+              <p className="teprojectheader"> terrier exchange </p>
               <p className="teprojectdate"> nov 2019 - dec 2019 </p>
             </Slide>
             <Slide bottom>
               <p className="teprojectdescription"> inspired by facebook marketplace, 4 computer engineers and i wanted to personalize and organize the experience of buying and selling textbooks from students to students. </p>
-              <p className="teprojectdescription"> we decided on an android app and named it terrierexchange, focusing on boston university students who can filter books based on their majors. there is the sign-in and registration pages, a dashboard to buy textbooks from boston university's 8 different colleges, a selling page to upload an image and description of a textbook, and a shopping cart screen to see what's in the cart and proceed to checking out. firebaseui auth handled signing in users with email addresses and passwords, and firebase sdk authentication handled registering users. cloud storage from google's firebase authentication stored the information and images that users will upload to sell their textbooks. </p>
+              <p className="teprojectdescription"> we decided on an android app and named it terrier exchange, focusing on boston university students who can filter books based on their majors. there is the sign-in and registration pages, a dashboard to buy textbooks from boston university's 8 different colleges, a selling page to upload an image and description of a textbook, and a shopping cart screen to see what's in the cart and proceed to checking out. firebaseui auth handled signing in users with email addresses and passwords, and firebase sdk authentication handled registering users. cloud storage from google's firebase authentication stored the information and images that users will upload to sell their textbooks. </p>
               <p className="teprojectdescription"> if we had more time, we would have implemented a renting and bidding system to allow for more flexibility for what students want to do with their textbooks. </p>
               <a href="https://github.com/nicolekwon/TerrierExchange" target="_blank" rel="noreferrer">
                 <img src={github} className="github" alt="github"/>

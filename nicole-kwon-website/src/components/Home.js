@@ -11,6 +11,7 @@ import animal_lover from '../icons/animal_lover.JPEG';
 import email from '../icons/email.png';
 import linkedin from '../icons/linkedin.png';
 import resume from '../icons/resume.png';
+import nicole_kwon_resume from '../icons/nicole_kwon_resume.pdf';
 
 import NavBar from './NavBar';
 import Warning from './Warning';
@@ -19,7 +20,7 @@ function Home() {
 
   const [time, setTime] = React.useState(0);
 
-  const titles = ["a junior swe", "an aspiring pm", "a bu alumna", "an ot brother", "a violinist & violist", "a proud cat mom"];
+  const titles = ["a junior swe", "a bu alumna", "an ot brother", "a violinist & violist", "a proud cat mom"];
   const images = [software_engineer, aspiring_product_manager, bu_alum, brother, violist, animal_lover];
 
   const [isWidth, setisWidth] = React.useState(false);
@@ -49,7 +50,7 @@ function Home() {
     const interval = setInterval(() => {
         setTime(time => time+1);
     }, 1500);
-    if (time == 6)
+    if (time == 5)
     {
         setTime(time => 0);
     }
@@ -78,7 +79,7 @@ function Home() {
             <a href="https://www.linkedin.com/in/kwonn/" target="_blank" rel="noreferrer">
                 <img src={linkedin} className="linkedin" alt="linkedin"/>
             </a>
-            <a href="/nicole_kwon_resume.pdf" download>
+            <a href={nicole_kwon_resume} className="aboutlink" download>
                 <img src={resume} className="resume" alt="resume"/>
             </a>
           </div>
