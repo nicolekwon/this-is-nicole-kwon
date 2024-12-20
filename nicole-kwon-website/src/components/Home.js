@@ -19,7 +19,7 @@ function Home() {
 
   const [time, setTime] = React.useState(0);
 
-  const titles = ["a junior swe", "a bu alumna", "an ot brother", "a violinist & violist", "a proud cat mom"];
+  const titles = ["an associate swe", "a bu alumna", "an ot brother", "a violinist & violist", "a proud cat mom"];
   const images = [software_engineer, bu_alum, brother, violist, animal_lover];
 
   const [isWidth, setisWidth] = React.useState(false);
