@@ -3,7 +3,6 @@ import 'normalize.css';
 import React from 'react';
 import star from '../icons/star.png';
 import software_engineer from '../icons/software_engineer.JPEG';
-import aspiring_product_manager from '../icons/aspiring_product_manager.JPEG';
 import bu_alum from '../icons/bu_alum.JPEG';
 import brother from '../icons/brother.JPEG';
 import violist from '../icons/violist.JPEG';
@@ -21,7 +20,7 @@ function Home() {
   const [time, setTime] = React.useState(0);
 
   const titles = ["a junior swe", "a bu alumna", "an ot brother", "a violinist & violist", "a proud cat mom"];
-  const images = [software_engineer, aspiring_product_manager, bu_alum, brother, violist, animal_lover];
+  const images = [software_engineer, bu_alum, brother, violist, animal_lover];
 
   const [isWidth, setisWidth] = React.useState(false);
   const [isHeight, setisHeight] = React.useState(false);
